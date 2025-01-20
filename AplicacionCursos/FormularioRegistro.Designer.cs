@@ -37,6 +37,7 @@ namespace AplicacionCursos
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormularioRegistro));
+
 			this.label1 = new System.Windows.Forms.Label();
 			this.menuRegistrarCurso = new System.Windows.Forms.MenuStrip();
 			this.registrarMenu = new System.Windows.Forms.ToolStripMenuItem();
@@ -61,12 +62,15 @@ namespace AplicacionCursos
 			this.label13 = new System.Windows.Forms.Label();
 			this.label9 = new System.Windows.Forms.Label();
 			this.label6 = new System.Windows.Forms.Label();
+
 			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
+
 			this.menuRegistrarCurso.SuspendLayout();
 			this.groupBox1.SuspendLayout();
 			this.SuspendLayout();
 			// 
+
 			// label1
 			// 
 			this.label1.BackColor = System.Drawing.Color.Transparent;
@@ -78,6 +82,7 @@ namespace AplicacionCursos
 			this.label1.Name = "label1";
 			this.label1.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
 			this.label1.Size = new System.Drawing.Size(684, 92);
+
 			this.label1.TabIndex = 4;
 			this.label1.Text = "REGISTRO DE CURSOS";
 			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
