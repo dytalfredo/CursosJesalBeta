@@ -1,0 +1,8 @@
+C:\Users\dytal\OneDrive\Documentos\SharpDevelop Projects\AplicacionCursos\AplicacionCursos\bin\Debug\AplicacionCursos.exe
+C:\Users\dytal\OneDrive\Documentos\SharpDevelop Projects\AplicacionCursos\AplicacionCursos\bin\Debug\AplicacionCursos.pdb
+C:\Users\dytal\OneDrive\Documentos\SharpDevelop Projects\AplicacionCursos\AplicacionCursos\obj\Debug\AplicacionCursos.csprojResolveAssemblyReference.cache
+C:\Users\dytal\OneDrive\Documentos\SharpDevelop Projects\AplicacionCursos\AplicacionCursos\obj\Debug\AplicacionCursos.MainForm.resources
+C:\Users\dytal\OneDrive\Documentos\SharpDevelop Projects\AplicacionCursos\AplicacionCursos\obj\Debug\AplicacionCursos.csproj.GenerateResource.Cache
+C:\Users\dytal\OneDrive\Documentos\SharpDevelop Projects\AplicacionCursos\AplicacionCursos\obj\Debug\AplicacionCursos.exe
+C:\Users\dytal\OneDrive\Documentos\SharpDevelop Projects\AplicacionCursos\AplicacionCursos\obj\Debug\AplicacionCursos.pdb
+C:\Users\dytal\OneDrive\Documentos\SharpDevelop Projects\AplicacionCursos\AplicacionCursos\obj\Debug\AplicacionCursos.FormularioRegistro.resources
