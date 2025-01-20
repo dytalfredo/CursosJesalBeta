@@ -90,11 +90,11 @@ namespace AplicacionCursos
 									this.actualizarMenu,
 									this.borrarMenu,
 									this.salirToolStripMenuItem});
-			this.menuPrincipal.Location = new System.Drawing.Point(0, 431);
+			this.menuPrincipal.Location = new System.Drawing.Point(0, 427);
 			this.menuPrincipal.Name = "menuPrincipal";
 			this.menuPrincipal.Padding = new System.Windows.Forms.Padding(230, 2, 0, 2);
 			this.menuPrincipal.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-			this.menuPrincipal.Size = new System.Drawing.Size(692, 32);
+			this.menuPrincipal.Size = new System.Drawing.Size(688, 32);
 			this.menuPrincipal.TabIndex = 0;
 			this.menuPrincipal.Text = "menuStrip1";
 			// 
@@ -112,6 +112,7 @@ namespace AplicacionCursos
 			this.actualizarMenu.Name = "actualizarMenu";
 			this.actualizarMenu.Size = new System.Drawing.Size(95, 28);
 			this.actualizarMenu.Text = "Actualizar";
+			this.actualizarMenu.Click += new System.EventHandler(this.ActualizarMenuClick);
 			// 
 			// borrarMenu
 			// 
@@ -132,9 +133,9 @@ namespace AplicacionCursos
 			// 
 			this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
 			this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-			this.pictureBox1.Location = new System.Drawing.Point(0, 360);
+			this.pictureBox1.Location = new System.Drawing.Point(0, 356);
 			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(692, 71);
+			this.pictureBox1.Size = new System.Drawing.Size(688, 71);
 			this.pictureBox1.TabIndex = 1;
 			this.pictureBox1.TabStop = false;
 			// 
@@ -144,7 +145,7 @@ namespace AplicacionCursos
 			this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
 			this.pictureBox2.Location = new System.Drawing.Point(0, 0);
 			this.pictureBox2.Name = "pictureBox2";
-			this.pictureBox2.Size = new System.Drawing.Size(692, 8);
+			this.pictureBox2.Size = new System.Drawing.Size(688, 8);
 			this.pictureBox2.TabIndex = 2;
 			this.pictureBox2.TabStop = false;
 			// 
@@ -157,7 +158,7 @@ namespace AplicacionCursos
 			this.label1.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
 			this.label1.Name = "label1";
 			this.label1.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-			this.label1.Size = new System.Drawing.Size(692, 43);
+			this.label1.Size = new System.Drawing.Size(688, 43);
 			this.label1.TabIndex = 3;
 			this.label1.Text = "CURSOS JESAL";
 			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -169,7 +170,7 @@ namespace AplicacionCursos
 			this.label2.ForeColor = System.Drawing.Color.DimGray;
 			this.label2.Location = new System.Drawing.Point(0, 51);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(692, 28);
+			this.label2.Size = new System.Drawing.Size(688, 28);
 			this.label2.TabIndex = 4;
 			this.label2.Text = "Cursos para todos";
 			this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -182,7 +183,7 @@ namespace AplicacionCursos
 			this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
 			this.groupBox1.Location = new System.Drawing.Point(0, 79);
 			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(692, 47);
+			this.groupBox1.Size = new System.Drawing.Size(688, 47);
 			this.groupBox1.TabIndex = 5;
 			this.groupBox1.TabStop = false;
 			// 
@@ -201,7 +202,7 @@ namespace AplicacionCursos
 			this.botonBuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
 			this.botonBuscar.UseVisualStyleBackColor = false;
 			this.botonBuscar.Click += new System.EventHandler(this.BotonBuscarClick);
-			this.botonBuscar.MouseEnter += new System.EventHandler(this.BotonBuscarMouseEnter);
+			
 			// 
 			// textBoxBuscar
 			// 
@@ -234,7 +235,7 @@ namespace AplicacionCursos
 			this.label4.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
 			this.label4.Name = "label4";
 			this.label4.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-			this.label4.Size = new System.Drawing.Size(692, 35);
+			this.label4.Size = new System.Drawing.Size(688, 35);
 			this.label4.TabIndex = 6;
 			this.label4.Text = "Datos del curso";
 			this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -247,7 +248,7 @@ namespace AplicacionCursos
 			this.label5.Location = new System.Drawing.Point(0, 161);
 			this.label5.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
 			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(692, 35);
+			this.label5.Size = new System.Drawing.Size(688, 35);
 			this.label5.TabIndex = 7;
 			this.label5.Text = "Ingrese los datos del curso para llenar esta zona";
 			this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -277,7 +278,7 @@ namespace AplicacionCursos
 			this.panelDatosCurso.Margin = new System.Windows.Forms.Padding(3, 20, 3, 3);
 			this.panelDatosCurso.Name = "panelDatosCurso";
 			this.panelDatosCurso.Padding = new System.Windows.Forms.Padding(0, 40, 0, 0);
-			this.panelDatosCurso.Size = new System.Drawing.Size(692, 165);
+			this.panelDatosCurso.Size = new System.Drawing.Size(688, 165);
 			this.panelDatosCurso.TabIndex = 8;
 			// 
 			// label22
@@ -489,7 +490,7 @@ namespace AplicacionCursos
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-			this.ClientSize = new System.Drawing.Size(692, 463);
+			this.ClientSize = new System.Drawing.Size(688, 459);
 			this.ControlBox = false;
 			this.Controls.Add(this.panelDatosCurso);
 			this.Controls.Add(this.label5);

@@ -1,12 +1,4 @@
-﻿/*
- * Created by SharpDevelop.
- * User: dytal
- * Date: 19/1/2025
- * Time: 7:37 p. m.
- * 
- * To change this template use Tools | Options | Coding | Edit Standard Headers.
- */
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
@@ -20,21 +12,18 @@ namespace AplicacionCursos
 	{
 		public MainForm()
 		{
-			//
-			// The InitializeComponent() call is required for Windows Forms designer support.
-			//
+		
 			InitializeComponent();
 			menuPrincipal.Renderer = new MyRenderer();
-			
-			//
-			// TODO: Add constructor code after the InitializeComponent() call.
-			//
+	
 		}
+		
+		//HOVER DE LOS MENU ITEMS
 		private class MyRenderer : ToolStripProfessionalRenderer {
         public MyRenderer() : base(new MyColors()) {}
     }
 
-    private class MyColors : ProfessionalColorTable {
+    	private class MyColors : ProfessionalColorTable {
         public override Color MenuItemSelected {
             get { return Color.Yellow; }
         }
@@ -46,9 +35,7 @@ namespace AplicacionCursos
         }
     }
 		
-
-	
-		
+		//BOTON SALIR CON CAJA DE MENSAJE DE CONFIRMACIÓN
 		void SalirToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			DialogResult result = MessageBox.Show(this, "¿Estás seguro de que quieres salir?", "Confirmar salida", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2); 
@@ -56,16 +43,13 @@ namespace AplicacionCursos
 			{ Application.Exit();}
 	}
 		
-		
-		
-		
+		//PLACEHOLDER DE LA CAJA DE TEXTO DE BUSCAR
 		void MainFormLoad(object sender, EventArgs e)
 		{
 			textBoxBuscar.Text ="Ingresa el codigo del curso";
 			textBoxBuscar.ForeColor = Color.LightGray;
 			panelDatosCurso.Visible = false;
 		}
-		
 		void TextBoxBuscarEnter(object sender, EventArgs e)
 		{
 			if(textBoxBuscar.Text=="Ingresa el codigo del curso"){
@@ -74,7 +58,6 @@ namespace AplicacionCursos
 			}
 
 		}
-		
 		void TextBoxBuscarLeave(object sender, EventArgs e)
 		{
 			if(textBoxBuscar.Text==""){
@@ -84,22 +67,22 @@ namespace AplicacionCursos
 
 		}
 		
-		
-	
-		
+		//EFECTO HOVER BOTON LUPA BUSCAR	
 		void BotonBuscarMouseEnter(object sender, EventArgs e)
 		{
 			botonBuscar.BackColor=Color.LightGoldenrodYellow;
 		}
 		
-		void BotonBuscarClick(object sender, EventArgs e)
-		{
-			
-		}
-		
+
 		void RegistrarMenuClick(object sender, EventArgs e)
 		{
 			FormularioRegistro x = new FormularioRegistro();
+			x.Show();
+		}
+		
+		void ActualizarMenuClick(object sender, EventArgs e)
+		{
+			FormularioRegistro x = new FormularioRegistro("AA-22");
 			x.Show();
 		}
 	}
