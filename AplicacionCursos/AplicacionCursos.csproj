@@ -50,6 +50,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Curso.cs" />
+    <Compile Include="EnumModalidad.cs" />
     <Compile Include="FormularioRegistro.cs" />
     <Compile Include="FormularioRegistro.Designer.cs">
       <DependentUpon>FormularioRegistro.cs</DependentUpon>

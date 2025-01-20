@@ -14,3 +14,4 @@ C:\Users\ddd\Documents\SharpDevelop Projects\AplicacionCursos\AplicacionCursos\o
 C:\Users\ddd\Documents\SharpDevelop Projects\AplicacionCursos\AplicacionCursos\obj\Debug\AplicacionCursos.csproj.GenerateResource.Cache
 C:\Users\ddd\Documents\SharpDevelop Projects\AplicacionCursos\AplicacionCursos\obj\Debug\AplicacionCursos.exe
 C:\Users\ddd\Documents\SharpDevelop Projects\AplicacionCursos\AplicacionCursos\obj\Debug\AplicacionCursos.pdb
+C:\Users\ddd\Documents\SharpDevelop Projects\AplicacionCursos\AplicacionCursos\bin\Debug\Newtonsoft.Json.dll
