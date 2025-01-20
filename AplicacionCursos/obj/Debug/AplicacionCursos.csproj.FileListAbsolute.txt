@@ -15,3 +15,4 @@ C:\Users\dytal\OneDrive\Documentos\SharpDevelop Projects\Respaldo\AplicacionCurs
 C:\Users\dytal\OneDrive\Documentos\SharpDevelop Projects\Respaldo\AplicacionCursos\obj\Debug\AplicacionCursos.exe
 C:\Users\dytal\OneDrive\Documentos\SharpDevelop Projects\Respaldo\AplicacionCursos\obj\Debug\AplicacionCursos.pdb
 C:\Users\dytal\OneDrive\Documentos\SharpDevelop Projects\Respaldo\AplicacionCursos\bin\Debug\Newtonsoft.Json.dll
+C:\Users\dytal\OneDrive\Documentos\SharpDevelop Projects\Respaldo\AplicacionCursos\obj\Debug\AplicacionCursos.Papelera.resources

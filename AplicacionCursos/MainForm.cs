@@ -126,7 +126,12 @@ namespace AplicacionCursos
 				label20.Text = cursoBuscado.horas.ToString();
 				label18.Text = cursoBuscado.fecha_inicio.Date.ToString("dd-MM-yyyy");
 				label16.Text = cursoBuscado.fecha_culminacion.Date.ToString("dd-MM-yyyy");
-				
+				if (cursoBuscado.activo) {
+					labelActivo.Text="SI";
+					
+				}else{
+					labelActivo.Text="NO";
+				}
 				
 				} catch(Exception ex){
 					MessageBox.Show("El curso no se encuentra registrado", "Busqueda", MessageBoxButtons.OK);
@@ -168,7 +173,7 @@ namespace AplicacionCursos
 				label14.Text = "";
 				label20.Text = "";
 				label16.Text = "";
-				label22.Text = "";
+				labelActivo.Text = "";
 		}
 		
 		

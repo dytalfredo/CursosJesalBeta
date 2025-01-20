@@ -37,7 +37,6 @@ namespace AplicacionCursos
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormularioRegistro));
-
 			this.label1 = new System.Windows.Forms.Label();
 			this.menuRegistrarCurso = new System.Windows.Forms.MenuStrip();
 			this.registrarMenu = new System.Windows.Forms.ToolStripMenuItem();
@@ -62,15 +61,12 @@ namespace AplicacionCursos
 			this.label13 = new System.Windows.Forms.Label();
 			this.label9 = new System.Windows.Forms.Label();
 			this.label6 = new System.Windows.Forms.Label();
-
 			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
-
 			this.menuRegistrarCurso.SuspendLayout();
 			this.groupBox1.SuspendLayout();
 			this.SuspendLayout();
 			// 
-
 			// label1
 			// 
 			this.label1.BackColor = System.Drawing.Color.Transparent;
@@ -82,7 +78,6 @@ namespace AplicacionCursos
 			this.label1.Name = "label1";
 			this.label1.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
 			this.label1.Size = new System.Drawing.Size(684, 92);
-
 			this.label1.TabIndex = 4;
 			this.label1.Text = "REGISTRO DE CURSOS";
 			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -158,16 +153,20 @@ namespace AplicacionCursos
 			this.groupBox1.TabIndex = 6;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "CAMBIAR POR INDICADO ";
-			
 			// 
 			// checkBox1
 			// 
-			this.checkBox1.Location = new System.Drawing.Point(82, 136);
+			this.checkBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.TopLeft;
+			this.checkBox1.Font = new System.Drawing.Font("Georgia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.checkBox1.Location = new System.Drawing.Point(103, 143);
 			this.checkBox1.Name = "checkBox1";
-			this.checkBox1.Size = new System.Drawing.Size(17, 25);
+			this.checkBox1.Size = new System.Drawing.Size(30, 25);
 			this.checkBox1.TabIndex = 7;
-			this.checkBox1.Text = "checkBox1";
+			this.checkBox1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.checkBox1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this.checkBox1.UseVisualStyleBackColor = true;
+			this.checkBox1.CheckedChanged += new System.EventHandler(this.CheckBox1CheckedChanged);
 			// 
 			// comboBoxEstudiantes
 			// 
@@ -272,10 +271,10 @@ namespace AplicacionCursos
 			// label23
 			// 
 			this.label23.AutoSize = true;
-			this.label23.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label23.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label23.Location = new System.Drawing.Point(14, 137);
 			this.label23.Name = "label23";
-			this.label23.Size = new System.Drawing.Size(67, 18);
+			this.label23.Size = new System.Drawing.Size(87, 25);
 			this.label23.TabIndex = 34;
 			this.label23.Text = "Activo:";
 			// 
@@ -372,7 +371,6 @@ namespace AplicacionCursos
 			this.label2.Text = "Bienvenido al area de registro y actualización.\r\nIngresa los datos o actualiza lo" +
 			" mostrados para registrar o actualizar un curso.\r\n";
 			this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-			
 			// 
 			// label3
 			// 
@@ -442,5 +440,10 @@ namespace AplicacionCursos
 		private System.Windows.Forms.ToolStripMenuItem registrarMenu;
 		private System.Windows.Forms.MenuStrip menuRegistrarCurso;
 		private System.Windows.Forms.Label label1;
+		
+		void CheckBox1CheckedChanged(object sender, System.EventArgs e)
+		{
+			
+		}
 	}
 }

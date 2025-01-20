@@ -28,5 +28,10 @@ namespace AplicacionCursos
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		
+		void CheckBox1CheckedChanged(object sender, EventArgs e)
+		{
+			
+		}
 	}
 }
