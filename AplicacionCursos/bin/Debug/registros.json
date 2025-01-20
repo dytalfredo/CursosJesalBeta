@@ -1,134 +1,13 @@
 [
   {
-    "instructor_del_curso": "Jesus castillo",
-    "titulo_del_curso": "Cocinar pasticho en 20 minutos",
-    "modalidad": 0,
-    "horas": 60,
-    "fecha_culminacion": "2025-01-20T09:40:38.7645236-04:00",
-    "fecha_inicio": "0001-01-01T00:00:00",
-    "cantidad_de_estudiantes": 10,
-    "activo": true,
-    "codigo": "AA-22"
-  },
-  {
-    "instructor_del_curso": "Jesus castillo",
-    "titulo_del_curso": "Cocinar pasticho en 30 minutos",
-    "modalidad": 0,
-    "horas": 60,
-    "fecha_culminacion": "2025-01-20T09:42:08.0401887-04:00",
-    "fecha_inicio": "0001-01-01T00:00:00",
-    "cantidad_de_estudiantes": 10,
-    "activo": false,
-    "codigo": "AA-23"
-  },
-  {
-    "instructor_del_curso": "Jesus castillo",
-    "titulo_del_curso": "POO",
-    "modalidad": 0,
-    "horas": 60,
-    "fecha_culminacion": "2025-01-20T09:45:21.1941369-04:00",
-    "fecha_inicio": "0001-01-01T00:00:00",
-    "cantidad_de_estudiantes": 10,
-    "activo": true,
-    "codigo": "AA-24"
-  },
-  {
     "instructor_del_curso": "jesus castillo",
-    "titulo_del_curso": "Javascript",
+    "titulo_del_curso": "Cocinando un pasticho",
     "modalidad": 0,
-    "horas": 36,
-    "fecha_culminacion": "2025-01-20T09:50:49.458933-04:00",
-    "fecha_inicio": "0001-01-01T00:00:00",
-    "cantidad_de_estudiantes": 5,
-    "activo": true,
-    "codigo": "AA-25"
-  },
-  {
-    "instructor_del_curso": "Jesus castillo",
-    "titulo_del_curso": "c#",
-    "modalidad": 0,
-    "horas": 37,
-    "fecha_culminacion": "2025-01-20T10:02:14.8073782-04:00",
-    "fecha_inicio": "0001-01-01T00:00:00",
-    "cantidad_de_estudiantes": 5,
-    "activo": true,
-    "codigo": "AA-26"
-  },
-  {
-    "instructor_del_curso": "Jesus castillo",
-    "titulo_del_curso": "Phyton",
-    "modalidad": 0,
-    "horas": 35,
-    "fecha_culminacion": "2025-01-20T10:05:47.0688797-04:00",
-    "fecha_inicio": "0001-01-01T00:00:00",
+    "horas": 38,
+    "fecha_culminacion": "2025-01-28T17:46:09",
+    "fecha_inicio": "2025-01-20T17:46:09.5780409-04:00",
     "cantidad_de_estudiantes": 4,
     "activo": true,
-    "codigo": "AA-27"
-  },
-  {
-    "instructor_del_curso": "Jesus castillo",
-    "titulo_del_curso": "Ruby",
-    "modalidad": 0,
-    "horas": 39,
-    "fecha_culminacion": "2025-01-20T10:37:58.4971949-04:00",
-    "fecha_inicio": "0001-01-01T00:00:00",
-    "cantidad_de_estudiantes": 5,
-    "activo": true,
-    "codigo": "AA-28"
-  },
-  {
-    "instructor_del_curso": "Jesus castillo",
-    "titulo_del_curso": "Ruby",
-    "modalidad": 0,
-    "horas": 39,
-    "fecha_culminacion": "2025-01-20T10:38:45.6243476-04:00",
-    "fecha_inicio": "0001-01-01T00:00:00",
-    "cantidad_de_estudiantes": 5,
-    "activo": true,
-    "codigo": "AA-29"
-  },
-  {
-    "instructor_del_curso": "Jesus Castillo",
-    "titulo_del_curso": "Go",
-    "modalidad": 2,
-    "horas": 41,
-    "fecha_culminacion": "2025-01-20T10:42:17.4424429-04:00",
-    "fecha_inicio": "0001-01-01T00:00:00",
-    "cantidad_de_estudiantes": 5,
-    "activo": true,
-    "codigo": "AA-30"
-  },
-  {
-    "instructor_del_curso": "Jesus castillo",
-    "titulo_del_curso": "PHP",
-    "modalidad": 0,
-    "horas": 42,
-    "fecha_culminacion": "2025-01-20T11:06:04.9006205-04:00",
-    "fecha_inicio": "0001-01-01T00:00:00",
-    "cantidad_de_estudiantes": 5,
-    "activo": true,
-    "codigo": "AA-31"
-  },
-  {
-    "instructor_del_curso": "jesus castilllo",
-    "titulo_del_curso": "C",
-    "modalidad": 1,
-    "horas": 67,
-    "fecha_culminacion": "2025-01-20T13:01:35.9695478-04:00",
-    "fecha_inicio": "0001-01-01T00:00:00",
-    "cantidad_de_estudiantes": 5,
-    "activo": true,
-    "codigo": "AA-33"
-  },
-  {
-    "instructor_del_curso": "jesus castillo",
-    "titulo_del_curso": "typescript",
-    "modalidad": 2,
-    "horas": 40,
-    "fecha_culminacion": "2025-01-23T13:56:09",
-    "fecha_inicio": "0001-01-01T00:00:00",
-    "cantidad_de_estudiantes": 8,
-    "activo": true,
-    "codigo": "AA-32"
+    "codigo": "AA-20"
   }
 ]

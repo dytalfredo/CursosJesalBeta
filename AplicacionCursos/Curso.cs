@@ -62,6 +62,7 @@ namespace AplicacionCursos
 			this.titulo_del_curso = titulo_del_curso;
 			this.horas = horas;
 			this.fecha_culminacion = fecha_culminacion;
+			this.fecha_inicio = fecha_inicio;
 			this.cantidad_de_estudiantes = cantidad_de_estudiantes;
 			this.modalidad = Modalidad.Presencial;
 			

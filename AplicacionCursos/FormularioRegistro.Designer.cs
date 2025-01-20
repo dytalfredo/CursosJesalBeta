@@ -188,6 +188,7 @@ namespace AplicacionCursos
 			this.comboBoxHoras.Name = "comboBoxHoras";
 			this.comboBoxHoras.Size = new System.Drawing.Size(120, 26);
 			this.comboBoxHoras.TabIndex = 7;
+			
 			// 
 			// registrarFinal
 			// 
@@ -220,7 +221,6 @@ namespace AplicacionCursos
 			this.registrarTipo.Name = "registrarTipo";
 			this.registrarTipo.Size = new System.Drawing.Size(158, 26);
 			this.registrarTipo.TabIndex = 7;
-			
 			// 
 			// registrarInstructor
 			// 

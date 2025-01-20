@@ -21,6 +21,7 @@ namespace AplicacionCursos
 			menuPrincipal.Renderer = new MyRenderer();
 			
 			textBoxBuscar.TextChanged += new EventHandler(PintarDeRojoFormatoDeCodigoErroneo);
+			textBoxBuscar.KeyUp += new KeyEventHandler(textBoxBuscarKeyPress);
 	
 		}
 		
@@ -74,6 +75,14 @@ namespace AplicacionCursos
 
 		}
 		
+		void textBoxBuscarKeyPress(object sender, EventArgs e){
+			if((string.IsNullOrWhiteSpace(textBoxBuscar.Text)) && (panelDatosCurso.Visible)){
+				_CursoSelected = null;
+				limpiarCamposDeResultadosDeBusqueda();
+				panelDatosCurso.Visible = false;
+			}
+		}
+		
 		
 		//EFECTO HOVER BOTON LUPA BUSCAR	
 		void BotonBuscarMouseEnter(object sender, EventArgs e)
@@ -115,7 +124,8 @@ namespace AplicacionCursos
 				label10.Text = cursoBuscado.modalidad.ToString();
 				label14.Text = cursoBuscado.cantidad_de_estudiantes.ToString();
 				label20.Text = cursoBuscado.horas.ToString();
-				label16.Text = cursoBuscado.fecha_culminacion.ToString();
+				label18.Text = cursoBuscado.fecha_inicio.Date.ToString("dd-MM-yyyy");
+				label16.Text = cursoBuscado.fecha_culminacion.Date.ToString("dd-MM-yyyy");
 				
 				
 				} catch(Exception ex){
