@@ -4,12 +4,19 @@
     <ProjectGuid>{87FD132B-C29E-46FE-96BD-62B1F2B78EB2}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+
     <OutputType>WinExe</OutputType>
+
+    <OutputType>Exe</OutputType>
+
     <RootNamespace>AplicacionCursos</RootNamespace>
     <AssemblyName>AplicacionCursos</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <AppDesignerFolder>Properties</AppDesignerFolder>
+
+    <NoWin32Manifest>False</NoWin32Manifest>
+
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -21,6 +28,9 @@
     <Optimize>False</Optimize>
     <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
+
+    <StartAction>Project</StartAction>
+
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -31,6 +41,11 @@
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
+
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -47,10 +62,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+
     <Compile Include="FormularioPrincipal.cs" />
     <Compile Include="FormularioPrincipal.Designer.cs">
       <DependentUpon>FormularioPrincipal.cs</DependentUpon>
     </Compile>
+
+    <Compile Include="Curso.cs" />
+    <Compile Include="Cursos.cs" />
+    <Compile Include="EnumModalidad.cs" />
+
     <Compile Include="FormularioRegistro.cs" />
     <Compile Include="FormularioRegistro.Designer.cs">
       <DependentUpon>FormularioRegistro.cs</DependentUpon>
