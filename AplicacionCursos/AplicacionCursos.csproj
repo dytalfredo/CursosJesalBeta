@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Curso.cs" />
+    <Compile Include="Cursos.cs" />
     <Compile Include="EnumModalidad.cs" />
     <Compile Include="FormularioRegistro.cs" />
     <Compile Include="FormularioRegistro.Designer.cs">
