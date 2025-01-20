@@ -6,7 +6,6 @@ C:\Users\dytal\OneDrive\Documentos\SharpDevelop Projects\AplicacionCursos\Aplica
 C:\Users\dytal\OneDrive\Documentos\SharpDevelop Projects\AplicacionCursos\AplicacionCursos\obj\Debug\AplicacionCursos.exe
 C:\Users\dytal\OneDrive\Documentos\SharpDevelop Projects\AplicacionCursos\AplicacionCursos\obj\Debug\AplicacionCursos.pdb
 C:\Users\dytal\OneDrive\Documentos\SharpDevelop Projects\AplicacionCursos\AplicacionCursos\obj\Debug\AplicacionCursos.FormularioRegistro.resources
-
 C:\Users\dytal\OneDrive\Documentos\SharpDevelop Projects\Respaldo\AplicacionCursos\bin\Debug\AplicacionCursos.exe
 C:\Users\dytal\OneDrive\Documentos\SharpDevelop Projects\Respaldo\AplicacionCursos\bin\Debug\AplicacionCursos.pdb
 C:\Users\dytal\OneDrive\Documentos\SharpDevelop Projects\Respaldo\AplicacionCursos\obj\Debug\AplicacionCursos.csprojResolveAssemblyReference.cache
@@ -16,4 +15,3 @@ C:\Users\dytal\OneDrive\Documentos\SharpDevelop Projects\Respaldo\AplicacionCurs
 C:\Users\dytal\OneDrive\Documentos\SharpDevelop Projects\Respaldo\AplicacionCursos\obj\Debug\AplicacionCursos.exe
 C:\Users\dytal\OneDrive\Documentos\SharpDevelop Projects\Respaldo\AplicacionCursos\obj\Debug\AplicacionCursos.pdb
 C:\Users\dytal\OneDrive\Documentos\SharpDevelop Projects\Respaldo\AplicacionCursos\bin\Debug\Newtonsoft.Json.dll
-

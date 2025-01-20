@@ -158,7 +158,7 @@ namespace AplicacionCursos
 			this.groupBox1.TabIndex = 6;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "CAMBIAR POR INDICADO ";
-			this.groupBox1.Enter += new System.EventHandler(this.GroupBox1Enter);
+			
 			// 
 			// checkBox1
 			// 
@@ -372,7 +372,7 @@ namespace AplicacionCursos
 			this.label2.Text = "Bienvenido al area de registro y actualización.\r\nIngresa los datos o actualiza lo" +
 			" mostrados para registrar o actualizar un curso.\r\n";
 			this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.label2.Click += new System.EventHandler(this.Label2Click);
+			
 			// 
 			// label3
 			// 
