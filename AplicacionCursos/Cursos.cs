@@ -100,6 +100,22 @@ namespace AplicacionCursos
 
             return cursoBuscado;
         }
+        
+       public List<Curso> ObtenerCursosInactivos()
+		{
+		    List<Curso> coleccionCursosInactivos = new List<Curso>();
+		    
+		    foreach (Curso curso in cursos)
+		    {
+		        if (!curso.activo)
+		        {
+		            coleccionCursosInactivos.Add(curso);
+		        }
+		    }
+		    
+		    return coleccionCursosInactivos;
+		}
+
 
         public void Actualizar(Curso curso)
         {
