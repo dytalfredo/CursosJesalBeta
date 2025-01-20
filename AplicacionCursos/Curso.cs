@@ -27,6 +27,7 @@ namespace AplicacionCursos
 		private Modalidad _modalidad;
 		
 		private int _horas;
+		private DateTime _fecha_inicio;
 		private DateTime _fecha_culminacion;
 		private int _cantidad_de_estudiantes;
 		private bool _activo;
@@ -41,16 +42,19 @@ namespace AplicacionCursos
 		// Detalles
 		public int horas {get {return _horas;} set {_horas = value;}}
 		public DateTime fecha_culminacion {get {return _fecha_culminacion;} set {_fecha_culminacion = value;}}
+		public DateTime fecha_inicio {get {return _fecha_inicio;} set {_fecha_inicio = value;}}
 		public int cantidad_de_estudiantes {get {return _cantidad_de_estudiantes;} set {_cantidad_de_estudiantes = value;}}
 		public bool activo {get {return _activo;} set {_activo = value;}}
-		public string codigo {get {return _codigo;} set {_codigo = value;}}
+		public string codigo {get {return _codigo;}}
 		
 	
 		public Curso(
+			string codigo,
 			string instructor_del_curso, 
 			string titulo_del_curso, 
 			int horas, 
 			DateTime fecha_culminacion,
+			DateTime fecha_inicio,
 			int cantidad_de_estudiantes
 			)
 		{
@@ -60,6 +64,14 @@ namespace AplicacionCursos
 			this.fecha_culminacion = fecha_culminacion;
 			this.cantidad_de_estudiantes = cantidad_de_estudiantes;
 			this.modalidad = Modalidad.Presencial;
+			
+			this._codigo = codigo;
 		}
+		
+		public override string ToString()
+		{
+			return string.Format("[Curso Codigo={0}, Instructor_del_curso={1}, Titulo_del_curso={2}, Modalidad={3}, Horas={4}, Fecha_culminacion={5}, Cantidad_de_estudiantes={6}, Activo={7}]", _codigo, _instructor_del_curso, _titulo_del_curso, _modalidad, _horas, _fecha_culminacion, _cantidad_de_estudiantes, _activo);
+		}
+
 	}
 }

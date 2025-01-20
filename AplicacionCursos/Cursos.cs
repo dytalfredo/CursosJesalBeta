@@ -10,8 +10,23 @@ namespace AplicacionCursos
     /// </summary>
     public class Cursos
     {
-        private List<Curso> cursos;
+        public List<Curso> cursos;
         private string ruta_archivo_json = "./registros.json";
+        
+        // Usamos el Singleton para obtener la instancia única de Cursos
+        private static Cursos instancia;
+        
+        public static Cursos Instance
+        {
+            get
+            {
+                if (instancia == null)
+                {
+                    instancia = new Cursos();
+                }
+                return instancia;
+            }
+        }
 
         public Cursos()
         {
@@ -56,23 +71,26 @@ namespace AplicacionCursos
             if (!registrado)
             {
                 cursos.Add(curso);
+                curso.activo = true;
                 GuardarEnArchivo(); 
                 return;
             }
 
-            throw new Exception("El curso ya está registrado.");
+            throw new Exception("El curso ya se encuentra registrado.");
         }
 
         public Curso Consultar(string codigo)
         {
             Curso cursoBuscado = null;
-            foreach (Curso curso in cursos)
-            {
-                if (curso.codigo == codigo && curso.activo)
-                {
-                    cursoBuscado = curso;
-                    break;
-                }
+            if(cursos != null){
+            	foreach (Curso curso in cursos)
+				{
+	                if (curso.codigo == codigo && curso.activo)
+	                {
+	                    cursoBuscado = curso;
+	                    break;
+	                }
+	            }
             }
 
             if (cursoBuscado == null)
@@ -118,5 +136,6 @@ namespace AplicacionCursos
                 indice++;
             }
         }
+
     }
 }

@@ -9,22 +9,41 @@ namespace AplicacionCursos
 	/// </summary>
 	public partial class FormularioRegistro : Form
 	{
+		private Cursos cursos = Cursos.Instance;
+		
 		public FormularioRegistro()
 		{
 			
 			InitializeComponent();
 			menuRegistrarCurso.Renderer = new MyRenderer();
+			label23.Visible = false;
+			checkBox1.Visible = false;
+			registrarMenu.Click += new EventHandler(registrarCursoClick);
 
 		}
 		
 		
 		//CONSTRUCTOR PARA ACTUALIZAR CURSOS.
 		//TODO: OBTENER TODOS LOS DATOS DEL REGISTROS PARA PASARLOS AL FORMULARIO DE REGISTRO Y ACTUALIZAR.
-		public FormularioRegistro(String t){
+		public FormularioRegistro(Curso curso){
 			InitializeComponent();
 			menuRegistrarCurso.Renderer = new MyRenderer();
-			registrarCodigo.Text=t;
-		
+			
+			label1.Text = "ACTUALIZAR CURSO";
+			label23.Visible = true;
+			checkBox1.Visible = true;
+			
+			// Cargar en formulario datos del curso seleccionado para su actualizacion
+			registrarCodigo.Text = curso.codigo;
+			registrarInstructor.Text = curso.instructor_del_curso;
+			registrarTitulo.Text = curso.titulo_del_curso;
+			
+			comboBoxHoras.SelectedIndex =  comboBoxHoras.FindString(curso.horas.ToString());
+			registrarFinal.Value = curso.fecha_culminacion;
+			//registrarInicio.Value = curso.fecha_inicio;
+			comboBoxEstudiantes.SelectedIndex = comboBoxEstudiantes.FindString(curso.cantidad_de_estudiantes.ToString());
+			
+			
 		}
 		
 		
@@ -135,5 +154,67 @@ namespace AplicacionCursos
 				registrarInstructor.ForeColor= Color.LightGray;
 			}
 		}
+		
+		void registrarCursoClick(object sender, EventArgs e){
+			
+			if (string.IsNullOrWhiteSpace(registrarCodigo.Text) ||
+				string.IsNullOrWhiteSpace(registrarInstructor.Text) ||
+			    string.IsNullOrWhiteSpace(registrarTitulo.Text) ||
+			    comboBoxHoras.SelectedItem == null ||
+			    comboBoxEstudiantes.SelectedItem == null)
+			{
+    				MessageBox.Show("Por favor, complete todos los campos antes de registrar el curso.", 
+                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+    				return;
+			}
+			
+			Curso curso = new Curso(
+				registrarCodigo.Text,
+				registrarInstructor.Text,
+				registrarTitulo.Text,
+				(int)comboBoxHoras.SelectedItem,
+				registrarFinal.Value,
+				registrarInicio.Value,
+				(int)comboBoxEstudiantes.SelectedItem
+			);
+			
+			
+			if (registrarTipo.Text == Modalidad.Presencial.ToString())
+			{
+			    curso.modalidad = Modalidad.Presencial;
+			}
+			else if (registrarTipo.Text == Modalidad.Semipresencial.ToString())
+			{
+			    curso.modalidad = Modalidad.Semipresencial;
+			}
+			else if (registrarTipo.Text == Modalidad.Remoto.ToString())
+			{
+			    curso.modalidad = Modalidad.Remoto;
+			}
+ 			else {
+				MessageBox.Show("Modalidad no disponible", "Error", MessageBoxButtons.OK);
+			}
+				
+			try {
+				cursos.Registrar(curso);
+				limpiarCamposDeRegistro();
+				MessageBox.Show("Curso registrado con exito", "Registro Exitoso", MessageBoxButtons.OK);
+			}
+			catch(Exception ex){
+				MessageBox.Show(ex.Message, "Registro de curso sin exito", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+			
+		}
+		
+		void limpiarCamposDeRegistro(){
+			registrarCodigo.Text = "";
+			registrarInstructor.Text = "";
+			registrarTitulo.Text = "";
+			comboBoxHoras.SelectedIndex = -1;
+			registrarFinal.Value = DateTime.Now;
+			comboBoxEstudiantes.SelectedIndex = -1;
+		}
+		
 	}
 }

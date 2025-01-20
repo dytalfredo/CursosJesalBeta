@@ -80,7 +80,7 @@ namespace AplicacionCursos
 			// label1
 			// 
 			this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-			this.label1.Font = new System.Drawing.Font("Albert Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.ForeColor = System.Drawing.Color.SaddleBrown;
 			this.label1.Location = new System.Drawing.Point(0, 8);
 			this.label1.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
@@ -96,7 +96,7 @@ namespace AplicacionCursos
 			this.menuRegistrarCurso.AutoSize = false;
 			this.menuRegistrarCurso.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("menuRegistrarCurso.BackgroundImage")));
 			this.menuRegistrarCurso.Dock = System.Windows.Forms.DockStyle.Bottom;
-			this.menuRegistrarCurso.Font = new System.Drawing.Font("Albert Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.menuRegistrarCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.menuRegistrarCurso.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
 									this.registrarMenu,
 									this.limpiarToolStripMenuItem,
@@ -113,14 +113,14 @@ namespace AplicacionCursos
 			// 
 			this.registrarMenu.ForeColor = System.Drawing.Color.Linen;
 			this.registrarMenu.Name = "registrarMenu";
-			this.registrarMenu.Size = new System.Drawing.Size(79, 28);
+			this.registrarMenu.Size = new System.Drawing.Size(97, 28);
 			this.registrarMenu.Text = "Guardar";
 			// 
 			// limpiarToolStripMenuItem
 			// 
 			this.limpiarToolStripMenuItem.ForeColor = System.Drawing.Color.Linen;
 			this.limpiarToolStripMenuItem.Name = "limpiarToolStripMenuItem";
-			this.limpiarToolStripMenuItem.Size = new System.Drawing.Size(76, 28);
+			this.limpiarToolStripMenuItem.Size = new System.Drawing.Size(90, 28);
 			this.limpiarToolStripMenuItem.Text = "Limpiar";
 			this.limpiarToolStripMenuItem.Click += new System.EventHandler(this.LimpiarToolStripMenuItemClick);
 			// 
@@ -128,7 +128,7 @@ namespace AplicacionCursos
 			// 
 			this.salirMenu.ForeColor = System.Drawing.Color.White;
 			this.salirMenu.Name = "salirMenu";
-			this.salirMenu.Size = new System.Drawing.Size(55, 28);
+			this.salirMenu.Size = new System.Drawing.Size(63, 28);
 			this.salirMenu.Text = "Salir";
 			this.salirMenu.Click += new System.EventHandler(this.SalirMenuClick);
 			// 
@@ -215,11 +215,12 @@ namespace AplicacionCursos
 			this.registrarTipo.Items.AddRange(new object[] {
 									"Presencial",
 									"Semipresencial",
-									"Virtual"});
+									"Remoto"});
 			this.registrarTipo.Location = new System.Drawing.Point(423, 50);
 			this.registrarTipo.Name = "registrarTipo";
 			this.registrarTipo.Size = new System.Drawing.Size(158, 26);
 			this.registrarTipo.TabIndex = 7;
+			
 			// 
 			// registrarInstructor
 			// 
