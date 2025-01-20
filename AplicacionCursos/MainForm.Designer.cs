@@ -201,7 +201,7 @@ namespace AplicacionCursos
 			this.botonBuscar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			this.botonBuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
 			this.botonBuscar.UseVisualStyleBackColor = false;
-			this.botonBuscar.Click += new System.EventHandler(this.BotonBuscarClick);
+			
 			
 			// 
 			// textBoxBuscar

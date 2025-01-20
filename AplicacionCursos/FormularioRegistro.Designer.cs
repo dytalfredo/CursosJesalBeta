@@ -73,7 +73,7 @@ namespace AplicacionCursos
 			this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
 			this.pictureBox2.Location = new System.Drawing.Point(0, 0);
 			this.pictureBox2.Name = "pictureBox2";
-			this.pictureBox2.Size = new System.Drawing.Size(584, 8);
+			this.pictureBox2.Size = new System.Drawing.Size(734, 8);
 			this.pictureBox2.TabIndex = 3;
 			this.pictureBox2.TabStop = false;
 			// 
@@ -86,7 +86,7 @@ namespace AplicacionCursos
 			this.label1.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
 			this.label1.Name = "label1";
 			this.label1.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-			this.label1.Size = new System.Drawing.Size(584, 64);
+			this.label1.Size = new System.Drawing.Size(734, 64);
 			this.label1.TabIndex = 4;
 			this.label1.Text = "REGISTRO DE CURSOS";
 			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -105,7 +105,7 @@ namespace AplicacionCursos
 			this.menuRegistrarCurso.Name = "menuRegistrarCurso";
 			this.menuRegistrarCurso.Padding = new System.Windows.Forms.Padding(140, 2, 0, 2);
 			this.menuRegistrarCurso.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-			this.menuRegistrarCurso.Size = new System.Drawing.Size(584, 32);
+			this.menuRegistrarCurso.Size = new System.Drawing.Size(734, 32);
 			this.menuRegistrarCurso.TabIndex = 5;
 			this.menuRegistrarCurso.Text = "menuStrip1";
 			// 
@@ -157,7 +157,7 @@ namespace AplicacionCursos
 			this.groupBox1.ForeColor = System.Drawing.Color.DimGray;
 			this.groupBox1.Location = new System.Drawing.Point(0, 72);
 			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(584, 159);
+			this.groupBox1.Size = new System.Drawing.Size(734, 159);
 			this.groupBox1.TabIndex = 6;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Registro";
@@ -193,7 +193,7 @@ namespace AplicacionCursos
 			// 
 			this.registrarFinal.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.registrarFinal.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-			this.registrarFinal.Location = new System.Drawing.Point(351, 114);
+			this.registrarFinal.Location = new System.Drawing.Point(428, 114);
 			this.registrarFinal.Name = "registrarFinal";
 			this.registrarFinal.Size = new System.Drawing.Size(114, 26);
 			this.registrarFinal.TabIndex = 39;
@@ -202,7 +202,7 @@ namespace AplicacionCursos
 			// 
 			this.registrarInicio.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.registrarInicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-			this.registrarInicio.Location = new System.Drawing.Point(351, 82);
+			this.registrarInicio.Location = new System.Drawing.Point(428, 82);
 			this.registrarInicio.Name = "registrarInicio";
 			this.registrarInicio.Size = new System.Drawing.Size(114, 26);
 			this.registrarInicio.TabIndex = 38;
@@ -216,7 +216,7 @@ namespace AplicacionCursos
 									"Presencial",
 									"Semipresencial",
 									"Virtual"});
-			this.registrarTipo.Location = new System.Drawing.Point(346, 50);
+			this.registrarTipo.Location = new System.Drawing.Point(423, 50);
 			this.registrarTipo.Name = "registrarTipo";
 			this.registrarTipo.Size = new System.Drawing.Size(158, 26);
 			this.registrarTipo.TabIndex = 7;
@@ -226,42 +226,43 @@ namespace AplicacionCursos
 			this.registrarInstructor.AcceptsReturn = true;
 			this.registrarInstructor.AcceptsTab = true;
 			this.registrarInstructor.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.registrarInstructor.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
 			this.registrarInstructor.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.registrarInstructor.ForeColor = System.Drawing.Color.DimGray;
 			this.registrarInstructor.Location = new System.Drawing.Point(119, 53);
 			this.registrarInstructor.MaxLength = 80;
 			this.registrarInstructor.Name = "registrarInstructor";
-			this.registrarInstructor.Size = new System.Drawing.Size(146, 19);
+			this.registrarInstructor.Size = new System.Drawing.Size(220, 19);
 			this.registrarInstructor.TabIndex = 37;
+			this.registrarInstructor.Enter += new System.EventHandler(this.RegistrarInstructorEnter);
+			this.registrarInstructor.Leave += new System.EventHandler(this.RegistrarInstructorLeave);
 			// 
 			// registrarTitulo
 			// 
 			this.registrarTitulo.AcceptsReturn = true;
 			this.registrarTitulo.AcceptsTab = true;
 			this.registrarTitulo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.registrarTitulo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
 			this.registrarTitulo.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.registrarTitulo.ForeColor = System.Drawing.Color.DimGray;
-			this.registrarTitulo.Location = new System.Drawing.Point(358, 22);
+			this.registrarTitulo.Location = new System.Drawing.Point(435, 22);
 			this.registrarTitulo.MaxLength = 150;
 			this.registrarTitulo.Name = "registrarTitulo";
-			this.registrarTitulo.Size = new System.Drawing.Size(214, 19);
+			this.registrarTitulo.Size = new System.Drawing.Size(287, 19);
 			this.registrarTitulo.TabIndex = 36;
+			this.registrarTitulo.Enter += new System.EventHandler(this.RegistrarTituloEnter);
+			this.registrarTitulo.Leave += new System.EventHandler(this.RegistrarTituloLeave);
 			// 
 			// registrarCodigo
 			// 
-			this.registrarCodigo.AcceptsReturn = true;
-			this.registrarCodigo.AcceptsTab = true;
 			this.registrarCodigo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.registrarCodigo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
 			this.registrarCodigo.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.registrarCodigo.ForeColor = System.Drawing.Color.DimGray;
 			this.registrarCodigo.Location = new System.Drawing.Point(86, 22);
 			this.registrarCodigo.MaxLength = 5;
 			this.registrarCodigo.Name = "registrarCodigo";
-			this.registrarCodigo.Size = new System.Drawing.Size(108, 19);
+			this.registrarCodigo.Size = new System.Drawing.Size(253, 19);
 			this.registrarCodigo.TabIndex = 35;
+			this.registrarCodigo.Enter += new System.EventHandler(this.RegistrarCodigoEnter);
+			this.registrarCodigo.Leave += new System.EventHandler(this.RegistrarCodigoLeave);
 			// 
 			// label23
 			// 
@@ -277,7 +278,7 @@ namespace AplicacionCursos
 			// 
 			this.label17.AutoSize = true;
 			this.label17.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label17.Location = new System.Drawing.Point(287, 120);
+			this.label17.Location = new System.Drawing.Point(364, 120);
 			this.label17.Name = "label17";
 			this.label17.Size = new System.Drawing.Size(58, 18);
 			this.label17.TabIndex = 32;
@@ -287,7 +288,7 @@ namespace AplicacionCursos
 			// 
 			this.label19.AutoSize = true;
 			this.label19.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label19.Location = new System.Drawing.Point(287, 86);
+			this.label19.Location = new System.Drawing.Point(364, 86);
 			this.label19.Name = "label19";
 			this.label19.Size = new System.Drawing.Size(64, 18);
 			this.label19.TabIndex = 30;
@@ -317,7 +318,7 @@ namespace AplicacionCursos
 			// 
 			this.label11.AutoSize = true;
 			this.label11.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label11.Location = new System.Drawing.Point(287, 53);
+			this.label11.Location = new System.Drawing.Point(364, 53);
 			this.label11.Name = "label11";
 			this.label11.Size = new System.Drawing.Size(53, 18);
 			this.label11.TabIndex = 24;
@@ -337,7 +338,7 @@ namespace AplicacionCursos
 			// 
 			this.label9.AutoSize = true;
 			this.label9.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label9.Location = new System.Drawing.Point(286, 22);
+			this.label9.Location = new System.Drawing.Point(363, 22);
 			this.label9.Name = "label9";
 			this.label9.Size = new System.Drawing.Size(66, 18);
 			this.label9.TabIndex = 20;
@@ -357,7 +358,7 @@ namespace AplicacionCursos
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(584, 261);
+			this.ClientSize = new System.Drawing.Size(734, 261);
 			this.ControlBox = false;
 			this.Controls.Add(this.groupBox1);
 			this.Controls.Add(this.menuRegistrarCurso);
