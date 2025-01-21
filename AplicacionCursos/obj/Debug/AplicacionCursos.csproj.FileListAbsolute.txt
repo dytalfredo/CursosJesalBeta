@@ -15,12 +15,4 @@ C:\Users\dytal\OneDrive\Documentos\SharpDevelop Projects\Respaldo\AplicacionCurs
 C:\Users\dytal\OneDrive\Documentos\SharpDevelop Projects\Respaldo\AplicacionCursos\obj\Debug\AplicacionCursos.exe
 C:\Users\dytal\OneDrive\Documentos\SharpDevelop Projects\Respaldo\AplicacionCursos\obj\Debug\AplicacionCursos.pdb
 C:\Users\dytal\OneDrive\Documentos\SharpDevelop Projects\Respaldo\AplicacionCursos\bin\Debug\Newtonsoft.Json.dll
-C:\Users\ddd\Documents\SharpDevelop Projects\CursosJesalBeta\AplicacionCursos\bin\Debug\AplicacionCursos.exe
-C:\Users\ddd\Documents\SharpDevelop Projects\CursosJesalBeta\AplicacionCursos\bin\Debug\AplicacionCursos.pdb
-C:\Users\ddd\Documents\SharpDevelop Projects\CursosJesalBeta\AplicacionCursos\bin\Debug\Newtonsoft.Json.dll
-C:\Users\ddd\Documents\SharpDevelop Projects\CursosJesalBeta\AplicacionCursos\obj\Debug\AplicacionCursos.csprojResolveAssemblyReference.cache
-C:\Users\ddd\Documents\SharpDevelop Projects\CursosJesalBeta\AplicacionCursos\obj\Debug\AplicacionCursos.FormularioRegistro.resources
-C:\Users\ddd\Documents\SharpDevelop Projects\CursosJesalBeta\AplicacionCursos\obj\Debug\AplicacionCursos.MainForm.resources
-C:\Users\ddd\Documents\SharpDevelop Projects\CursosJesalBeta\AplicacionCursos\obj\Debug\AplicacionCursos.csproj.GenerateResource.Cache
-C:\Users\ddd\Documents\SharpDevelop Projects\CursosJesalBeta\AplicacionCursos\obj\Debug\AplicacionCursos.exe
-C:\Users\ddd\Documents\SharpDevelop Projects\CursosJesalBeta\AplicacionCursos\obj\Debug\AplicacionCursos.pdb
+C:\Users\dytal\OneDrive\Documentos\SharpDevelop Projects\Respaldo\AplicacionCursos\obj\Debug\AplicacionCursos.Papelera.resources

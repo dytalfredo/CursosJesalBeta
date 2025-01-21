@@ -9,6 +9,11 @@ namespace AplicacionCursos
 	/// </summary>
 	public partial class FormularioRegistro : Form
 	{
+		private bool formulario_vesion_actualizar=false;
+		private Curso curso_seleccionado_para_actualizar=null;
+		private Cursos cursos = Cursos.Instance;
+		
+		
 		public FormularioRegistro()
 		{
 			

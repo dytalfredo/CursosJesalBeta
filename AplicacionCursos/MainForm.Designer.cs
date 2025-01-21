@@ -51,7 +51,7 @@ namespace AplicacionCursos
 			this.label4 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
 			this.panelDatosCurso = new System.Windows.Forms.Panel();
-			this.label22 = new System.Windows.Forms.Label();
+			this.labelActivo = new System.Windows.Forms.Label();
 			this.label23 = new System.Windows.Forms.Label();
 			this.label16 = new System.Windows.Forms.Label();
 			this.label17 = new System.Windows.Forms.Label();
@@ -180,6 +180,7 @@ namespace AplicacionCursos
 			this.botonBuscar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			this.botonBuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
 			this.botonBuscar.UseVisualStyleBackColor = false;
+			this.botonBuscar.Click += new System.EventHandler(this.BotonBuscarClick);
 			// 
 			// textBoxBuscar
 			// 
@@ -235,7 +236,7 @@ namespace AplicacionCursos
 			// panelDatosCurso
 			// 
 			this.panelDatosCurso.BackColor = System.Drawing.Color.Transparent;
-			this.panelDatosCurso.Controls.Add(this.label22);
+			this.panelDatosCurso.Controls.Add(this.labelActivo);
 			this.panelDatosCurso.Controls.Add(this.label23);
 			this.panelDatosCurso.Controls.Add(this.label16);
 			this.panelDatosCurso.Controls.Add(this.label17);
@@ -261,16 +262,16 @@ namespace AplicacionCursos
 			this.panelDatosCurso.Size = new System.Drawing.Size(690, 165);
 			this.panelDatosCurso.TabIndex = 8;
 			// 
-			// label22
+			// labelActivo
 			// 
-			this.label22.AutoSize = true;
-			this.label22.Font = new System.Drawing.Font("Albert Text", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label22.ForeColor = System.Drawing.Color.SeaShell;
-			this.label22.Location = new System.Drawing.Point(595, 79);
-			this.label22.Name = "label22";
-			this.label22.Size = new System.Drawing.Size(52, 45);
-			this.label22.TabIndex = 17;
-			this.label22.Text = "SI";
+			this.labelActivo.AutoSize = true;
+			this.labelActivo.Font = new System.Drawing.Font("Albert Text", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.labelActivo.ForeColor = System.Drawing.Color.SeaShell;
+			this.labelActivo.Location = new System.Drawing.Point(595, 79);
+			this.labelActivo.Name = "labelActivo";
+			this.labelActivo.Size = new System.Drawing.Size(52, 45);
+			this.labelActivo.TabIndex = 17;
+			this.labelActivo.Text = "SI";
 			// 
 			// label23
 			// 
@@ -508,7 +509,7 @@ namespace AplicacionCursos
 		private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
 		private System.Windows.Forms.TextBox textBox2;
 		private System.Windows.Forms.Label label23;
-		private System.Windows.Forms.Label label22;
+		private System.Windows.Forms.Label labelActivo;
 		private System.Windows.Forms.Label label9;
 		private System.Windows.Forms.Label label8;
 		private System.Windows.Forms.Label label13;
