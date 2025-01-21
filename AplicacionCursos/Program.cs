@@ -14,6 +14,7 @@ namespace AplicacionCursos
 {
 	/// <summary>
 	/// Class with program entry point.
+	/// Autores: Alfredo Mendoza, Jesus Castillo
 	/// </summary>
 	internal sealed class Program
 	{
