@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace AplicacionCursos
 {
@@ -20,6 +21,11 @@ namespace AplicacionCursos
 			
 			InitializeComponent();
 			menuRegistrarCurso.Renderer = new MyRenderer();
+			
+			registrarMenu.Click += new EventHandler(registrarCursoClick);
+			registrarCodigo.TextChanged += new EventHandler(PintarDeRojoFormatoDeCodigoErroneo);
+			checkBox1.Visible = false;
+			label23.Visible = false	;
 
 		}
 		
@@ -106,9 +112,10 @@ namespace AplicacionCursos
 				registrarInstructor.Text = "Profesor o instructor";
 				registrarInstructor.ForeColor = Color.LightGray;
 				
+			} else {
+				SeleccionarValorEnComboBox2(comboBoxHoras,curso_seleccionado_para_actualizar.horas-20);
+				SeleccionarValorEnComboBox2(comboBoxEstudiantes,curso_seleccionado_para_actualizar.cantidad_de_estudiantes-4);
 			}
-			SeleccionarValorEnComboBox2(comboBoxHoras,curso_seleccionado_para_actualizar.horas-20);
-			SeleccionarValorEnComboBox2(comboBoxEstudiantes,curso_seleccionado_para_actualizar.cantidad_de_estudiantes-4);
 			
 		}
 		
@@ -220,6 +227,11 @@ namespace AplicacionCursos
 				(int)comboBoxEstudiantes.SelectedItem
 			);
 			
+			// Verificar consistencia de fecha
+			if(registrarInicio.Value > registrarFinal.Value){
+				MessageBox.Show("La fecha de inicio es menor a la fecha de culminacion", "Error", MessageBoxButtons.OK);
+				return;
+			}
 			curso.activo = checkBox1.Checked;
 			
 			if (registrarTipo.Text == Modalidad.Presencial.ToString())
@@ -265,6 +277,7 @@ namespace AplicacionCursos
     				return;
 			}
 			
+			
 			Curso curso = new Curso(
 				registrarCodigo.Text,
 				registrarInstructor.Text,
@@ -275,7 +288,14 @@ namespace AplicacionCursos
 				(int)comboBoxEstudiantes.SelectedItem
 			);
 			
+			// Verificar consistencia de fecha
+			if(registrarInicio.Value > registrarFinal.Value){
+				MessageBox.Show("La fecha de inicio es menor a la fecha de culminacion", "Error", MessageBoxButtons.OK);
+				return;
+			}
 			
+		
+			// Verificar modalidad
 			if (registrarTipo.Text == Modalidad.Presencial.ToString())
 			{
 			    curso.modalidad = Modalidad.Presencial;
@@ -292,15 +312,21 @@ namespace AplicacionCursos
 				MessageBox.Show("Modalidad no disponible", "Error", MessageBoxButtons.OK);
 			}
 				
-			try {
+			if(FormatoDeCodigoCorrecto(curso.codigo)){
+				try {
 				cursos.Registrar(curso);
 				limpiarCamposDeRegistro();
 				MessageBox.Show("Curso registrado con exito", "Registro Exitoso", MessageBoxButtons.OK);
-			}
-			catch(Exception ex){
-				MessageBox.Show(ex.Message, "Registro de curso sin exito", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				}
+				catch(Exception ex){
+					MessageBox.Show(ex.Message, "Registro de curso sin exito", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					return;
+				}
+			} else {
+				MessageBox.Show("Formato de codigo erroneo", "Formato", MessageBoxButtons.OK);
 				return;
 			}
+			
 			
 		}
 		
@@ -341,6 +367,27 @@ namespace AplicacionCursos
 		    Console.WriteLine(valor);
 		
 		    comboBox.SelectedIndex = valor;
+		}
+		
+		void PintarDeRojoFormatoDeCodigoErroneo(object sender, EventArgs e){
+			if(!FormatoDeCodigoCorrecto(registrarCodigo.Text)){
+				registrarCodigo.ForeColor = Color.Red;
+			} else {
+				registrarCodigo.ForeColor = Color.Gray;
+			}
+		}
+		
+		bool FormatoDeCodigoCorrecto(String texto){
+			string patron = @"^[A-Za-z]{2}-\d{2}$";
+			Regex formato = new Regex(patron);
+			
+			
+			if(!formato.IsMatch(texto)){
+				return false;
+			} 
+			else {
+				return true;
+			}
 		}
 
 	}
