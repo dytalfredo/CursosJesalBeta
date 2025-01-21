@@ -14,6 +14,7 @@ namespace AplicacionCursos
 		private Cursos cursos = Cursos.Instance;
 		
 		
+		
 		public FormularioRegistro()
 		{
 			
@@ -46,7 +47,7 @@ namespace AplicacionCursos
 			
 			//SeleccionarValorEnComboBox(comboBoxHoras, curso.horas);
 			SeleccionarValorEnComboBox(registrarTipo, curso.modalidad);
-			//SeleccionarValorEnComboBox(comboBoxEstudiantes, curso.cantidad_de_estudiantes);
+			
 			
 			registrarFinal.Value = curso.fecha_culminacion;
 			registrarInicio.Value = curso.fecha_inicio;
@@ -104,7 +105,10 @@ namespace AplicacionCursos
 				registrarTitulo.ForeColor = Color.LightGray;
 				registrarInstructor.Text = "Profesor o instructor";
 				registrarInstructor.ForeColor = Color.LightGray;
+				
 			}
+			SeleccionarValorEnComboBox2(comboBoxHoras,curso_seleccionado_para_actualizar.horas-20);
+			SeleccionarValorEnComboBox2(comboBoxEstudiantes,curso_seleccionado_para_actualizar.cantidad_de_estudiantes-4);
 			
 		}
 		
@@ -328,6 +332,15 @@ namespace AplicacionCursos
 		    {
 		        MessageBox.Show("El valor no se encontró en el ComboBox.");
 		    }
+		}
+		
+		private void SeleccionarValorEnComboBox2(ComboBox comboBox, int valor)
+		{
+		   
+		   
+		    Console.WriteLine(valor);
+		
+		    comboBox.SelectedIndex = valor;
 		}
 
 	}

@@ -29,7 +29,7 @@
     "fecha_culminacion": "2025-01-31T17:46:09",
     "fecha_inicio": "2025-01-20T17:46:09.5780409-04:00",
     "cantidad_de_estudiantes": 5,
-    "activo": false,
+    "activo": true,
     "codigo": "AA-22"
   },
   {

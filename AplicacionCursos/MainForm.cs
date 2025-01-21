@@ -14,6 +14,7 @@ namespace AplicacionCursos
 		private Cursos cursos = Cursos.Instance;
 		private Curso _CursoSelected = null ;
 		
+		
 		public MainForm()
 		{
 		
@@ -56,6 +57,7 @@ namespace AplicacionCursos
 			textBoxBuscar.Text ="Ingresa el codigo del curso";
 			textBoxBuscar.ForeColor = Color.LightGray;
 			panelDatosCurso.Visible = false;
+		
 		}
 		void TextBoxBuscarEnter(object sender, EventArgs e)
 		{
@@ -188,6 +190,8 @@ namespace AplicacionCursos
 			Papelera x = new Papelera();
 				x.Show();
 		}
+		
+	
 	}
 	
 }
