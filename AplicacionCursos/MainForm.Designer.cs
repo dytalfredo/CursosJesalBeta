@@ -114,8 +114,9 @@ namespace AplicacionCursos
 			// 
 			this.borrarMenu.ForeColor = System.Drawing.Color.Linen;
 			this.borrarMenu.Name = "borrarMenu";
-			this.borrarMenu.Size = new System.Drawing.Size(70, 28);
-			this.borrarMenu.Text = "Borrar";
+			this.borrarMenu.Size = new System.Drawing.Size(86, 28);
+			this.borrarMenu.Text = "Papelera";
+			this.borrarMenu.Click += new System.EventHandler(this.BorrarMenuClick);
 			// 
 			// salirToolStripMenuItem
 			// 

@@ -182,6 +182,12 @@ namespace AplicacionCursos
 		{
 			
 		}
+		
+		void BorrarMenuClick(object sender, EventArgs e)
+		{
+			Papelera x = new Papelera();
+				x.Show();
+		}
 	}
 	
 }

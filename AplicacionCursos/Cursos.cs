@@ -130,6 +130,7 @@ namespace AplicacionCursos
                     cursos[indice].horas = curso.horas;
                     cursos[indice].fecha_culminacion = curso.fecha_culminacion;
                     cursos[indice].cantidad_de_estudiantes = curso.cantidad_de_estudiantes;
+                    cursos[indice].activo = curso.activo;
 
                     GuardarEnArchivo(); 
                     break;
@@ -138,14 +139,28 @@ namespace AplicacionCursos
             }
         }
 
-        public void Eliminar(string codigo)
+        public void Desactivar(string codigo)
         {
             int indice = 0;
             while (indice < cursos.Count)
             {
                 if (cursos[indice].codigo == codigo)
                 {
-                    cursos[indice].activo = false; 
+                	cursos[indice].activo = false;
+                    GuardarEnArchivo();
+                    break;
+                }
+                indice++;
+            }
+        }
+        public void Activar(string codigo)
+        {
+            int indice = 0;
+            while (indice < cursos.Count)
+            {
+                if (cursos[indice].codigo == codigo)
+                {
+                	cursos[indice].activo = true;
                     GuardarEnArchivo();
                     break;
                 }

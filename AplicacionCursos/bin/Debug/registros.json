@@ -7,17 +7,17 @@
     "fecha_culminacion": "2025-01-31T17:46:09",
     "fecha_inicio": "2025-01-20T17:46:09.5780409-04:00",
     "cantidad_de_estudiantes": 10,
-    "activo": true,
+    "activo": false,
     "codigo": "AA-20"
   },
   {
     "instructor_del_curso": "jesus castillo",
-    "titulo_del_curso": "Cocinando un pasticho2",
+    "titulo_del_curso": "Cocinando un pasticho45",
     "modalidad": 1,
-    "horas": 45,
+    "horas": 40,
     "fecha_culminacion": "2025-01-31T17:46:09",
     "fecha_inicio": "2025-01-20T17:46:09.5780409-04:00",
-    "cantidad_de_estudiantes": 10,
+    "cantidad_de_estudiantes": 5,
     "activo": true,
     "codigo": "AA-21"
   },
@@ -25,11 +25,22 @@
     "instructor_del_curso": "jesus castillo",
     "titulo_del_curso": "Cocinando un pasticho3",
     "modalidad": 1,
+    "horas": 39,
+    "fecha_culminacion": "2025-01-31T17:46:09",
+    "fecha_inicio": "2025-01-20T17:46:09.5780409-04:00",
+    "cantidad_de_estudiantes": 5,
+    "activo": false,
+    "codigo": "AA-22"
+  },
+  {
+    "instructor_del_curso": "jesus castillo",
+    "titulo_del_curso": "Cocinando un pasticho4",
+    "modalidad": 1,
     "horas": 45,
     "fecha_culminacion": "2025-01-31T17:46:09",
     "fecha_inicio": "2025-01-20T17:46:09.5780409-04:00",
     "cantidad_de_estudiantes": 10,
-    "activo": false,
-    "codigo": "AA-22"
+    "activo": true,
+    "codigo": "AA-23"
   }
 ]

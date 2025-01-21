@@ -216,6 +216,8 @@ namespace AplicacionCursos
 				(int)comboBoxEstudiantes.SelectedItem
 			);
 			
+			curso.activo = checkBox1.Checked;
+			
 			if (registrarTipo.Text == Modalidad.Presencial.ToString())
 			{
 			    curso.modalidad = Modalidad.Presencial;
